@@ -1,9 +1,22 @@
+------------------ building the current version:
+
+# cd D:\ungoogled-chromium-windows>
 # clean everything but "download_cache" from "build"
-for /d %%i in ("D:\ungoogled-chromium-windows\build\*") do if not "%%~nxi"=="download_cache" rd /s /q "%%i"
+for /d %i in ("D:\ungoogled-chromium-windows\build\*") do if not "%~nxi"=="download_cache" rd /s /q "%i"
 del /q "D:\ungoogled-chromium-windows\build\*.*"
 
-# OR clean everything when versions change
+------------------ building a new version:
+
+# clean everything when versions change
 rd /s /q "D:\ungoogled-chromium-windows\build"
+
+# patch update_lists.py so we don't remove ML stuff
+python3 ungoogled-chromium/devutils/update_lists_patch.py
+
+# recompute the prune list
+python ungoogled-chromium/devutils/update_lists.py --tree build/src --domain-regex ungoogled-chromium/domain_regex.list
+
+------------------ shared:
 
 # output is in build\src\out\Default, use package to copy the important dist files
 # wait for the ninja phase - build script is prone to crashing before that but the phase shouldn't take more than 10 mins
