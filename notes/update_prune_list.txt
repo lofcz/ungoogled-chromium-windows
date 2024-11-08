@@ -1,0 +1,1 @@
+python ungoogled-chromium/devutils/update_lists.py --tree build/src --domain-regex ungoogled-chromium/domain_regex.list
