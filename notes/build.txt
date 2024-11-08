@@ -14,10 +14,12 @@ rd /s /q "D:\ungoogled-chromium-windows\build"
 python3 ungoogled-chromium/devutils/update_lists_patch.py
 
 # for the prune list build/src must exist, if not, run build, don't let it finish:
-python3 build.py # TODO: use clone.py?
+python3 build.py # TODO: use ungoogled-chromium\utils\clone.py?
 
 # recompute the prune list
 python ungoogled-chromium/devutils/update_lists.py --tree build/src --domain-regex ungoogled-chromium/domain_regex.list
+
+# todo: do we need to delete src again after we update the lists to avoid crashing the build? verify
 
 ------------------ shared:
 
