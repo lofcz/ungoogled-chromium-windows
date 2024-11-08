@@ -13,6 +13,9 @@ rd /s /q "D:\ungoogled-chromium-windows\build"
 # patch update_lists.py so we don't remove ML stuff
 python3 ungoogled-chromium/devutils/update_lists_patch.py
 
+# for the prune list build/src must exist, if not, run build, don't let it finish:
+python3 build.py # TODO: use clone.py?
+
 # recompute the prune list
 python ungoogled-chromium/devutils/update_lists.py --tree build/src --domain-regex ungoogled-chromium/domain_regex.list
 
