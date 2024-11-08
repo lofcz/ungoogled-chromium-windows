@@ -1,3 +1,4 @@
 # the submodule should show up as detached head in the git client
+# this must be done from: D:\ungoogled-chromium-windows\ungoogled-chromium
 git fetch
 git checkout XXX # SHA of the latest commit, can be taken from https://github.com/lofcz/ungoogled-chromium/commits/master/
