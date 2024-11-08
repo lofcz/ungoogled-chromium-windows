@@ -1,0 +1,10 @@
+# clean everything but "download_cache" from "build"
+for /d %%i in ("D:\ungoogled-chromium-windows\build\*") do if not "%%~nxi"=="download_cache" rd /s /q "%%i"
+del /q "D:\ungoogled-chromium-windows\build\*.*"
+
+# OR clean everything when versions change
+rd /s /q "D:\ungoogled-chromium-windows\build"
+
+# output is in build\src\out\Default, use package to copy the important dist files
+# wait for the ninja phase - build script is prone to crashing before that but the phase shouldn't take more than 10 mins
+python3 build.py

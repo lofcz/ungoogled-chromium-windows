@@ -1,0 +1,2 @@
+# output is a zip file in /build
+python3 package.py

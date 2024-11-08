@@ -1,0 +1,2 @@
+1. make sure the folder with source code is not "read only", this must be done before "src" is clonned, because after it would take ages and even when it finishes, some files are still "read-only", this breaks build
+2. 

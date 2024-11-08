@@ -1,0 +1,8 @@
+1. make sure the folder with source code is not "read only" (properties), this must be done before "src" is clonned, because after it would take ages and even when it finishes, some files are still "read-only", this breaks build
+2. install python - 3.10 is a must before 11/24, after 3.13 should be ok. Avoid MS Store version. For python 3.10 the latest win installer is here: https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe
+3. where python
+3.1: make sure multiple paths are not reported, this causes issues later
+4. in the folder reported, manually copy python.exe -> python3.exe
+5. pip install httplib2
+6. pip uninstall pyreadline
+7. pip install pyreadline3 # necessarry for python 3.10, maybe not for higher versions
