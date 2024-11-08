@@ -6,3 +6,4 @@
 5. pip install httplib2
 6. pip uninstall pyreadline
 7. pip install pyreadline3 # necessarry for python 3.10, maybe not for higher versions
+8. install 7-zip: https://www.7-zip.org/
