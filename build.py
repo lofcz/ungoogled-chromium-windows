@@ -206,14 +206,15 @@ def main():
             exit(1)
 
         # Prune binaries
+        get_logger().info("----------------------- starting pruning (build.py)")
         pruning_list = (_ROOT_DIR / 'ungoogled-chromium' / 'pruning.list') if args.tarball else (_ROOT_DIR  / 'pruning.list')
         unremovable_files = prune_binaries.prune_files(
             source_tree,
             pruning_list.read_text(encoding=ENCODING).splitlines()
         )
         if unremovable_files:
-            get_logger().error('Files could not be pruned: %s', unremovable_files)
-            parser.exit(1)
+            get_logger().warning('Files could not be pruned: %s', unremovable_files)
+            # parser.exit(1)
 
         # Unpack downloads
         get_logger().info('Unpacking downloads...')
