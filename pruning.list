@@ -2406,7 +2406,6 @@ services/device/usb/fuzz_corpus/descriptor6
 services/device/usb/fuzz_corpus/descriptor7
 services/device/usb/fuzz_corpus/usb_string_descriptors_example
 services/device/usb/fuzz_corpus/webusb_descriptors_unittest_example
-services/test/data/passage_embeddings/sentencepiece.model
 sql/test/data/recovery_387868
 testing/libfuzzer/fuzzers/flatbuffers_corpus/monsterdata_test.mon
 testing/libfuzzer/fuzzers/woff2_corpus/6df91fe5cbca947ae7b7b43d4cd4a861213fae9f
@@ -6044,9 +6043,6 @@ third_party/tflite/src/tensorflow/go/testdata/saved_model/half_plus_two/00000123
 third_party/tflite/src/tensorflow/go/testdata/saved_model/half_plus_two_empty_tags/00000123/saved_model.pb
 third_party/tflite/src/tensorflow/go/testdata/saved_model/half_plus_two_empty_tags/00000123/variables/variables.data-00000-of-00001
 third_party/tflite/src/tensorflow/go/testdata/saved_model/half_plus_two_empty_tags/00000123/variables/variables.index
-third_party/tflite/src/tensorflow/lite/delegates/xnnpack/odml_sdpa_composite_gqa.tflite.bin
-third_party/tflite/src/tensorflow/lite/delegates/xnnpack/odml_sdpa_composite_mha.tflite.bin
-third_party/tflite/src/tensorflow/lite/delegates/xnnpack/odml_sdpa_composite_mqa.tflite.bin
 third_party/tflite/src/tensorflow/lite/experimental/acceleration/compatibility/gpu_compatibility.bin
 third_party/tflite/src/tensorflow/lite/experimental/acceleration/mini_benchmark/data/chair_224_224_3.jpeg
 third_party/tflite/src/tensorflow/lite/experimental/acceleration/mini_benchmark/data/city_224_224_3.jpeg
@@ -6137,7 +6133,6 @@ third_party/tflite/src/tensorflow/lite/toco/logging/testdata/toco_log_after.pb
 third_party/tflite/src/tensorflow/lite/toco/logging/testdata/toco_log_before.pb
 third_party/tflite/src/tensorflow/python/checkpoint/testdata/table_legacy_saveable_object.data-00000-of-00001
 third_party/tflite/src/tensorflow/python/checkpoint/testdata/table_legacy_saveable_object.index
-third_party/tflite/src/tensorflow/python/compiler/mlir/multi_add.tflite
 third_party/tflite/src/tensorflow/python/compiler/tensorrt/model_tests/sample_model/saved_model.pb
 third_party/tflite/src/tensorflow/python/compiler/tensorrt/test/testdata/mnist/model.ckpt-46900.data-00000-of-00001
 third_party/tflite/src/tensorflow/python/compiler/tensorrt/test/testdata/mnist/model.ckpt-46900.index
@@ -6258,9 +6253,6 @@ third_party/tflite/src/third_party/icu/data/icu_conversion_data.c.gz.adf
 third_party/tflite/src/third_party/icu/data/icu_conversion_data.c.gz.adg
 third_party/tflite/src/third_party/icu/data/icu_conversion_data.c.gz.adh
 third_party/tflite/src/third_party/xla/xla/mlir/tools/mlir_bisect/tests/snapshot.mlir.pb
-third_party/tflite_support/src/tensorflow_lite_support/acceleration/configuration/testdata/mobilenet_v1_1.0_224_quant.tflite
-third_party/tflite_support/src/tensorflow_lite_support/acceleration/configuration/testdata/mobilenet_v1_1.0_224_quant_edgetpu.tflite
-third_party/tflite_support/src/tensorflow_lite_support/custom_ops/kernel/sentencepiece/testdata/sentencepiece.model
 third_party/tflite_support/src/tensorflow_lite_support/scann_ondevice/cc/test/testdata/dummy_index.ldb
 third_party/win_build_output/midl/chrome/browser/browser_switcher/bho/arm64/ie_bho_idl.tlb
 third_party/win_build_output/midl/chrome/browser/browser_switcher/bho/x64/ie_bho_idl.tlb
